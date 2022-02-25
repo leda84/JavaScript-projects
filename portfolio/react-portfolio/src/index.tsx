@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, Tech, Food, Hobbies } from './components';
+import { Home, Engineer, Chef, Hobbies, Contact } from './components';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home title = {'HELLO WORLD'} />
+    <Router>
+      <Switch>
+        <Route exact path = '/'>
+          <Home title = {'HELLO WORLD'} />
+        </Route>
+        <Route exact path = '/engineer'>
+          <Engineer />
+        </Route>
+        <Route exact path = '/chef'>
+          <Chef />
+        </Route>
+        <Route exact path = '/learner'>
+          <Hobbies />
+        </Route>
+        <Route exact path = '/contact'>
+          <Contact />
+        </Route>
+      </Switch>
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

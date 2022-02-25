@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-export const Tech = () => {
+export const Chef = () => {
     return(
         <div>
-            <h1>Tech Page</h1>
+            <h1>Chef Page</h1>
         </div>
     )
 }

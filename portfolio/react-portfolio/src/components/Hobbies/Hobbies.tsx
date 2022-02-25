@@ -4,7 +4,7 @@ import React from 'react';
 export const Hobbies = () => {
     return(
         <div>
-            <h1>Hobbies Page</h1>
+            <h1>Forever Learner Page</h1>
         </div>
     )
 }

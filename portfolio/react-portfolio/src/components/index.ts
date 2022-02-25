@@ -1,5 +1,5 @@
 export * from './Home';
-export * from './Tech';
-export * from './Food';
+export * from './Engineer';
+export * from './Chef';
 export * from './Hobbies';
 export * from './Contact';

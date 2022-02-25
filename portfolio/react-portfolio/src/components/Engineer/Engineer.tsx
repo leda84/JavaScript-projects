@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-export const Food = () => {
+export const Engineer = () => {
     return(
         <div>
-            <h1>Food Page</h1>
+            <h1>Engineer Page</h1>
         </div>
     )
 }

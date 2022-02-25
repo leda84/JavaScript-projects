@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import { Button } from '@mui/material';
 import skyline_image from '../../assets/images/skyline_image.png'
+import { Link } from 'react-router-dom';
 
 interface Props {
     title : string;
@@ -70,16 +71,19 @@ export const Home = (props : Props) => {
                     </h1>
                     <ul className = { `${classes.navigation} ${classes.logo_navigation}`}>
                         <li>
-                            <a href="" className = {classes.nav_a}>Home</a>
+                            <Link to = '/' className = {classes.nav_a}>Home</Link>
                         </li>
                         <li>
-                            <a href="" className = {classes.nav_a}>Tech</a>
+                            <Link to = '/engineer' className = {classes.nav_a}>Engineer</Link>
                         </li>
                         <li>
-                            <a href="" className = {classes.nav_a}>Food</a>
+                            <Link to = '/chef' className = {classes.nav_a}>Chef</Link>
                         </li>
                         <li>
-                            <a href="" className = {classes.nav_a}>Hobbies</a>
+                            <Link to = '/learner' className = {classes.nav_a}>Forever Learner</Link>
+                        </li>
+                        <li>
+                            <Link to = '/contact' className = {classes.nav_a}>Contact Me</Link>
                         </li>
                     </ul>
                 </div>
