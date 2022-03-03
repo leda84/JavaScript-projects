@@ -17,7 +17,8 @@ const useStyles = makeStyles({
         display : 'flex',
         justifyContent : 'space-between',
         alignItems : 'center',
-        backgroundColor : 'rgba(5, 5, 5, .9)'
+        backgroundColor : 'rgba(5, 5, 5, .9)',
+        height : '4em'
     },
     logo : {
         margin : '0 0 0 0.45em'
@@ -54,7 +55,7 @@ const useStyles = makeStyles({
         position : 'relative',
         top : '25%',
         tranform : 'translate(-50%, -50%)',
-        color : 'rgba(300, 300, 300, .5)',
+        color : 'rgba(300, 300, 300, .35)',
         fontFamily: 'Cormorant Garamond',
         fontSize : 35
     }
@@ -67,7 +68,7 @@ export const Home = (props : Props) => {
             <nav>
                 <div className = {classes.navbar_container}>
                     <h1 className = {`${classes.logo}`}>
-                        <a href="#" className = { `${classes.logo_a} ${classes.logo_navigation}`}>Laura DeJesus</a>
+                        <Link to = '/' className = { `${classes.logo_a} ${classes.logo_navigation}`}>Laura DeJesus</Link>
                     </h1>
                     <ul className = { `${classes.navigation} ${classes.logo_navigation}`}>
                         <li>
